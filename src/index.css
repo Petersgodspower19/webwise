@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+    background-color: hsl(41, 99%, 90%);
+    height: 100vh;
+    width: 100vw;
+   
+}
+.hero{
+    border: 10px solid skyblue;
+    border-radius: 5px;
+}
+.icon{
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+}
+.why {
+    background: url('./assets/whyUs.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    padding: 1.5rem 1.5rem 1rem;
+    padding-bottom: -50rem; 
+    height: fit-content;
+  }
+  
+  .projectBtn {
+    background: inherit;
+    width:fit-content;
+  }
+  input {
+    background-color: inherit;
+    border: none;
+    border-bottom: 3px solid hsl(0, 0%, 50%);
+    padding: 5px;
+  }
+  
+  input:focus {
+    outline: none; 
+  }
+
+  .ss{
+    color: #ffa880;
+    background-color: #050529;
+  }
+
+
+  @media(max-width:500px) {
+    #home{
+      width: 100%;
+      margin: auto;
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+     .img{
+      width: 80%;
+    }
+}
+
+.sideBar {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    height: 100vh;
+    width: 250px; 
+    padding: 50px 20px;
+    background: #050529;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(8px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 9999;
+  }
+  
+  .fade-out {
+    transform: translateX(-100%); 
+    opacity: 0;
+  }
